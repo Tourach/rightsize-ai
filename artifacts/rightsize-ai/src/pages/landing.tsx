@@ -62,7 +62,7 @@ function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 border border-border text-xs font-mono text-muted-foreground mb-8">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Now Building · Seeking Design Partners
+            In Development · Launching 2026
           </div>
           <h1 className="text-5xl md:text-7xl font-bold font-display leading-[1.1] mb-6">
             The AI Value Intelligence Platform for Regulated Enterprises.
@@ -72,7 +72,7 @@ function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" className="h-14 px-8 text-base font-mono uppercase w-full sm:w-auto gap-2">
-              Become a Design Partner <ArrowRight className="w-4 h-4" />
+              Request a Briefing <ArrowRight className="w-4 h-4" />
             </Button>
             <Button size="lg" variant="outline" className="h-14 px-8 text-base font-mono uppercase w-full sm:w-auto border-border/50 bg-background/50 backdrop-blur-sm">
               View the Prospectus
@@ -384,7 +384,7 @@ function PricingSection() {
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Priced for Enterprise Value.</h2>
-          <p className="text-lg text-muted-foreground">Indicative pricing for launch. Design partners lock in founder rates.</p>
+          <p className="text-lg text-muted-foreground">Indicative pricing for launch. Final tiers confirmed at GA.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
