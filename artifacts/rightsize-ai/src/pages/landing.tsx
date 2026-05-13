@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ShieldAlert, BarChart3, Fingerprint, Activity, Server, Database, CheckCircle2 } from "lucide-react";
+import { ArrowRight, ShieldAlert, BarChart3, Fingerprint, Activity, Server, Database, CheckCircle2, Linkedin, ExternalLink } from "lucide-react";
 import DashboardDemo from "@/components/dashboard-demo";
 
 export default function LandingPage() {
@@ -37,7 +38,7 @@ function Navbar() {
           <a href="#platform" className="hover:text-foreground transition-colors">Platform</a>
           <a href="#demo" className="hover:text-foreground transition-colors">Demo</a>
           <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
-          <a href="#team" className="hover:text-foreground transition-colors">Team</a>
+          <Link href="/team" className="hover:text-foreground transition-colors">Team</Link>
         </div>
         <div className="flex items-center gap-4">
           <Button variant="outline" className="hidden md:flex border-border/50 font-mono text-xs uppercase">Sign In</Button>
@@ -440,32 +441,61 @@ function PricingSection() {
   );
 }
 
-function TeamSection() {
-  const team = [
-    { name: "Guillaume Ehinger", role: "Google", desc: "AI systems at planetary scale." },
-    { name: "Etay Zwick", role: "Attuned Futures", desc: "Frontier tech to enterprise investment." },
-    { name: "Alex Paterson", role: "Cisco", desc: "Complex systems into measurable operations." },
-    { name: "David Mindham", role: "EDP Renewables", desc: "Priced risk/constraints in regulated energy." },
-    { name: "Ravikumaran Govender", role: "Momentum Group", desc: "Governed AI in complex financial institutions." }
-  ];
+const TEAM_PREVIEW = [
+  { name: "Guillaume Ehinger", initials: "GE", role: "Product & Technology", company: "Google", gradient: "from-blue-500 to-cyan-400", linkedin: "https://www.linkedin.com/in/gehinger/", photo: null as string | null },
+  { name: "Etay Zwick", initials: "EZ", role: "Market Strategy", company: "Attuned Futures", gradient: "from-violet-500 to-purple-400", linkedin: "https://www.linkedin.com/in/etay-zwick/", photo: null as string | null },
+  { name: "Alex Paterson", initials: "AP", role: "Monetization & Sales", company: "Cisco Systems", gradient: "from-emerald-500 to-teal-400", linkedin: "https://www.linkedin.com/in/alex-paterson-8a300921/", photo: null as string | null },
+  { name: "David Mindham", initials: "DM", role: "Operations & Ecosystem", company: "EDP Renewables", gradient: "from-orange-500 to-amber-400", linkedin: "https://www.linkedin.com/in/david-mindham-95168341/", photo: null as string | null },
+  { name: "Ravikumaran Govender", initials: "RG", role: "Financials & Funding", company: "Momentum Group", gradient: "from-rose-500 to-pink-400", linkedin: "https://www.linkedin.com/in/ravikumarangovender/", photo: null as string | null },
+];
 
+function TeamSection() {
   return (
     <section className="py-32 px-6" id="team">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-xs uppercase tracking-widest mb-4">TRIUM Global EMBA · NYU Stern / LSE / HEC Paris · Capstone 2026</p>
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Built by operators.</h2>
-          <p className="text-lg text-muted-foreground">Decades of combined experience running regulated systems at scale.</p>
+          <p className="text-lg text-muted-foreground max-w-xl mx-auto">We didn't find this problem in a research paper. Every one of us lived it.</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {team.map((member, i) => (
-            <div key={i} className="p-6 rounded-xl border border-border/50 bg-card/30">
-              <h4 className="font-bold text-lg">{member.name}</h4>
-              <p className="text-xs font-mono text-primary mb-3 uppercase">{member.role}</p>
-              <p className="text-sm text-muted-foreground">{member.desc}</p>
-            </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+          {TEAM_PREVIEW.map((member) => (
+            <a
+              key={member.name}
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-5 rounded-xl border border-border/50 bg-card/30 hover:border-primary/40 hover:bg-card/60 transition-all duration-300 flex items-center gap-4"
+              data-testid={`link-team-${member.initials.toLowerCase()}`}
+            >
+              <div className={`w-14 h-14 rounded-xl shrink-0 overflow-hidden ring-1 ring-border/30 group-hover:ring-primary/30 transition-all duration-300`}>
+                {member.photo ? (
+                  <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${member.gradient} flex items-center justify-center`}>
+                    <span className="text-lg font-bold text-white/90 select-none">{member.initials}</span>
+                  </div>
+                )}
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="font-semibold text-sm leading-tight truncate">{member.name}</p>
+                <p className="text-xs font-mono text-primary uppercase tracking-wide mt-0.5">{member.role}</p>
+                <p className="text-xs text-muted-foreground mt-0.5 flex items-center gap-1">
+                  <Linkedin className="w-3 h-3" />
+                  {member.company}
+                </p>
+              </div>
+            </a>
           ))}
+        </div>
+
+        <div className="text-center">
+          <Link href="/team" className="inline-flex">
+            <Button variant="outline" className="border-border/50 font-mono text-xs uppercase gap-2 hover:border-primary/50">
+              Meet the full team <ExternalLink className="w-3.5 h-3.5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
