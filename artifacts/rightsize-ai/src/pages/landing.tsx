@@ -165,10 +165,10 @@ function ProblemSection() {
             <div className="text-chart-3 font-mono mb-4 flex items-center gap-2">
               <span className="w-2 h-2 bg-current rounded-full" /> For the CRO
             </div>
-            <h3 className="text-5xl font-bold font-display mb-2">€15M</h3>
+            <h3 className="text-5xl font-bold font-display mb-2">3%</h3>
             <p className="text-lg font-medium mb-4 text-foreground/90">EU AI Act Penalties</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Or 3% of global turnover. Taking effect August 2026, enterprise risk is invisible. Customer data flows through unauthorized endpoints without clear sovereignty guarantees.
+              Of global turnover — the EU AI Act penalty ceiling, taking effect August 2026. Enterprise risk is invisible. Customer data flows through unauthorized endpoints without clear sovereignty guarantees.
             </p>
           </motion.div>
         </div>
