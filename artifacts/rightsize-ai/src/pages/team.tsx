@@ -14,7 +14,7 @@ const TEAM = [
     gradient: "from-blue-500 to-cyan-400",
     bio: "Ran AI systems where performance, cost, and security all matter simultaneously at planetary scale. At Google, Guillaume built and operated AI infrastructure that serves billions of users — giving him a rare, grounded understanding of what it costs when AI systems are mismanaged. He brings that discipline to RightSize AI's product and technical architecture.",
     expertise: ["AI Infrastructure", "Platform Engineering", "Cost Optimization", "Security"],
-    photo: null,
+    photo: "/guillaume.jpeg",
   },
   {
     name: "Etay Zwick",
@@ -26,7 +26,7 @@ const TEAM = [
     gradient: "from-violet-500 to-purple-400",
     bio: "Connects frontier technology to real enterprise investment decisions. Etay has spent his career at the intersection of emerging technology and institutional capital, developing deep relationships with CFOs and investment committees who are now grappling with AI accountability. He leads RightSize AI's go-to-market strategy and buyer relationships.",
     expertise: ["Enterprise Strategy", "Investment Relations", "CFO Relationships", "Market Development"],
-    photo: null,
+    photo: "/etay.jpeg",
   },
   {
     name: "Alex Paterson",
@@ -38,7 +38,7 @@ const TEAM = [
     gradient: "from-emerald-500 to-teal-400",
     bio: "Turns complex AI and network systems into measurable, controllable operations for large enterprises. At Cisco, Alex drove the commercialization of AI capabilities across enterprise accounts — learning firsthand why most AI deployments fail to deliver ROI, and how to structure deals that align costs to outcomes. He leads revenue and sales architecture at RightSize AI.",
     expertise: ["Enterprise Sales", "AI Monetization", "Revenue Architecture", "Product-Led Growth"],
-    photo: null,
+    photo: "/alex.jpeg",
   },
   {
     name: "David Mindham",
@@ -50,7 +50,7 @@ const TEAM = [
     gradient: "from-orange-500 to-amber-400",
     bio: "Priced risk and operational constraints in systems where inefficiency is genuinely costly. At EDP Renewables, David operated in an environment where regulatory exposure and operational waste translate directly to financial liability — the exact conditions our target clients face. He brings operational rigor and risk pricing expertise to RightSize AI's platform design.",
     expertise: ["Risk Pricing", "Regulated Operations", "Compliance Systems", "Energy Sector"],
-    photo: null,
+    photo: "/david.jpeg",
   },
   {
     name: "Ravikumaran Govender",
@@ -62,7 +62,7 @@ const TEAM = [
     gradient: "from-rose-500 to-pink-400",
     bio: "Builds governed, scalable AI systems inside complex financial institutions. At Momentum Group, Ravi navigated the unique challenge of deploying AI in a heavily regulated financial environment — where data sovereignty, audit trails, and board-level accountability are non-negotiable. He leads RightSize AI's financial strategy and capital approach.",
     expertise: ["Financial AI Governance", "Capital Strategy", "Regulated Finance", "AI Compliance"],
-    photo: null,
+    photo: "/ravikumaran.jpeg",
   },
 ];
 

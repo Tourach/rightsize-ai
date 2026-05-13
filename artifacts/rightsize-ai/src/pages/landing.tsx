@@ -442,11 +442,11 @@ function PricingSection() {
 }
 
 const TEAM_PREVIEW = [
-  { name: "Guillaume Ehinger", initials: "GE", role: "Product & Technology", company: "Google", gradient: "from-blue-500 to-cyan-400", linkedin: "https://www.linkedin.com/in/gehinger/", photo: null as string | null },
-  { name: "Etay Zwick", initials: "EZ", role: "Market Strategy", company: "Attuned Futures", gradient: "from-violet-500 to-purple-400", linkedin: "https://www.linkedin.com/in/etay-zwick/", photo: null as string | null },
-  { name: "Alex Paterson", initials: "AP", role: "Monetization & Sales", company: "Cisco Systems", gradient: "from-emerald-500 to-teal-400", linkedin: "https://www.linkedin.com/in/alex-paterson-8a300921/", photo: null as string | null },
-  { name: "David Mindham", initials: "DM", role: "Operations & Ecosystem", company: "EDP Renewables", gradient: "from-orange-500 to-amber-400", linkedin: "https://www.linkedin.com/in/david-mindham-95168341/", photo: null as string | null },
-  { name: "Ravikumaran Govender", initials: "RG", role: "Financials & Funding", company: "Momentum Group", gradient: "from-rose-500 to-pink-400", linkedin: "https://www.linkedin.com/in/ravikumarangovender/", photo: null as string | null },
+  { name: "Guillaume Ehinger", initials: "GE", role: "Product & Technology", company: "Google", gradient: "from-blue-500 to-cyan-400", linkedin: "https://www.linkedin.com/in/gehinger/", photo: "/guillaume.jpeg" as string | null },
+  { name: "Etay Zwick", initials: "EZ", role: "Market Strategy", company: "Attuned Futures", gradient: "from-violet-500 to-purple-400", linkedin: "https://www.linkedin.com/in/etay-zwick/", photo: "/etay.jpeg" as string | null },
+  { name: "Alex Paterson", initials: "AP", role: "Monetization & Sales", company: "Cisco Systems", gradient: "from-emerald-500 to-teal-400", linkedin: "https://www.linkedin.com/in/alex-paterson-8a300921/", photo: "/alex.jpeg" as string | null },
+  { name: "David Mindham", initials: "DM", role: "Operations & Ecosystem", company: "EDP Renewables", gradient: "from-orange-500 to-amber-400", linkedin: "https://www.linkedin.com/in/david-mindham-95168341/", photo: "/david.jpeg" as string | null },
+  { name: "Ravikumaran Govender", initials: "RG", role: "Financials & Funding", company: "Momentum Group", gradient: "from-rose-500 to-pink-400", linkedin: "https://www.linkedin.com/in/ravikumarangovender/", photo: "/ravikumaran.jpeg" as string | null },
 ];
 
 function TeamSection() {
