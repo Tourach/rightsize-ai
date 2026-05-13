@@ -268,9 +268,7 @@ function DemoSection() {
               <div className="w-3 h-3 rounded-full bg-chart-3/80" />
               <div className="w-3 h-3 rounded-full bg-chart-2/80" />
             </div>
-            <div className="flex-1 max-w-md mx-auto h-7 bg-background/50 rounded-md border border-border/50 flex items-center justify-center text-xs font-mono text-muted-foreground">
-              trium.gehinger.com/dashboard/executive
-            </div>
+            <div className="flex-1 max-w-md mx-auto h-7 bg-background/50 rounded-md border border-border/50" />
           </div>
           
           <div className="p-0">
