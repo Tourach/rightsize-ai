@@ -41,8 +41,7 @@ function Navbar() {
           <Link href="/team" className="hover:text-foreground transition-colors">Team</Link>
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="outline" className="hidden md:flex border-border/50 font-mono text-xs uppercase">Sign In</Button>
-          <Button className="font-mono text-xs uppercase">Book Demo</Button>
+          <Button className="font-mono text-xs uppercase">Founder Briefing</Button>
         </div>
       </div>
     </nav>
@@ -63,7 +62,7 @@ function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 border border-border text-xs font-mono text-muted-foreground mb-8">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Platform in Early Access
+            Now Building · Seeking Design Partners
           </div>
           <h1 className="text-5xl md:text-7xl font-bold font-display leading-[1.1] mb-6">
             The AI Value Intelligence Platform for Regulated Enterprises.
@@ -73,10 +72,10 @@ function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" className="h-14 px-8 text-base font-mono uppercase w-full sm:w-auto gap-2">
-              Request Platform Access <ArrowRight className="w-4 h-4" />
+              Become a Design Partner <ArrowRight className="w-4 h-4" />
             </Button>
             <Button size="lg" variant="outline" className="h-14 px-8 text-base font-mono uppercase w-full sm:w-auto border-border/50 bg-background/50 backdrop-blur-sm">
-              Read the Prospectus
+              View the Prospectus
             </Button>
           </div>
         </motion.div>
@@ -385,7 +384,7 @@ function PricingSection() {
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Priced for Enterprise Value.</h2>
-          <p className="text-lg text-muted-foreground">Clear tiers. No hidden token markups.</p>
+          <p className="text-lg text-muted-foreground">Indicative pricing for launch. Design partners lock in founder rates.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -396,7 +395,7 @@ function PricingSection() {
               <span className="text-4xl font-display font-bold">$50K</span>
               <span className="text-muted-foreground">/yr</span>
             </div>
-            <Button className="w-full mb-6 font-mono text-xs uppercase" variant="outline">Start Free Trial</Button>
+            <Button className="w-full mb-6 font-mono text-xs uppercase" variant="outline">Express Interest</Button>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Cost Intelligence</li>
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Basic Risk Reporting</li>
@@ -413,7 +412,7 @@ function PricingSection() {
               <span className="text-4xl font-display font-bold">$90K</span>
               <span className="text-muted-foreground">/yr</span>
             </div>
-            <Button className="w-full mb-6 font-mono text-xs uppercase">Contact Sales</Button>
+            <Button className="w-full mb-6 font-mono text-xs uppercase">Request Briefing</Button>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Starter features</li>
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Value Intelligence</li>
@@ -428,7 +427,7 @@ function PricingSection() {
               <span className="text-4xl font-display font-bold">$150K+</span>
               <span className="text-muted-foreground">/yr</span>
             </div>
-            <Button className="w-full mb-6 font-mono text-xs uppercase" variant="outline">Contact Sales</Button>
+            <Button className="w-full mb-6 font-mono text-xs uppercase" variant="outline">Request Briefing</Button>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Growth features</li>
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> EU AI Act Exports</li>
