@@ -16,7 +16,6 @@ export default function LandingPage() {
         <DemoSection />
         <HowItWorksSection />
         <CompetitiveSection />
-        <PricingSection />
         <TeamSection />
       </main>
       <Footer />
@@ -37,7 +36,6 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <a href="#platform" className="hover:text-foreground transition-colors">Platform</a>
           <a href="#demo" className="hover:text-foreground transition-colors">Demo</a>
-          <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
           <Link href="/team" className="hover:text-foreground transition-colors">Team</Link>
         </div>
       </div>
@@ -195,21 +193,21 @@ function OpportunitySection() {
           <div className="lg:w-1/2 w-full">
             <div className="relative aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 rounded-full border-2 border-white/25 flex items-center justify-center bg-white/5 backdrop-blur-sm shadow-[inset_0_0_60px_rgba(255,255,255,0.04)]">
-                <div className="text-center absolute top-10">
+                <div className="text-center absolute top-8 left-0 right-0">
                   <p className="text-3xl font-display font-bold">$15B</p>
-                  <p className="text-xs font-mono text-muted-foreground uppercase">TAM</p>
+                  <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest">TAM</p>
                 </div>
-                
-                <div className="w-[70%] h-[70%] rounded-full border border-primary/30 flex items-center justify-center bg-primary/5 backdrop-blur-md">
-                  <div className="text-center absolute top-1/4">
+
+                <div className="relative w-[70%] h-[70%] rounded-full border border-primary/30 flex items-center justify-center bg-primary/5 backdrop-blur-md">
+                  <div className="text-center absolute top-6 left-0 right-0">
                     <p className="text-2xl font-display font-bold text-primary">$1.5B</p>
-                    <p className="text-xs font-mono text-primary/70 uppercase">SAM</p>
+                    <p className="text-xs font-mono text-primary/70 uppercase tracking-widest">SAM</p>
                   </div>
-                  
+
                   <div className="w-[60%] h-[60%] rounded-full border border-primary flex items-center justify-center bg-primary/20 backdrop-blur-xl shadow-[0_0_50px_rgba(0,210,255,0.2)]">
                     <div className="text-center">
                       <p className="text-xl font-display font-bold text-white">$10M</p>
-                      <p className="text-[10px] font-mono text-white/80 uppercase">Target ARR (Y3)</p>
+                      <p className="text-[10px] font-mono text-white/80 uppercase tracking-widest">Target ARR (Y3)</p>
                     </div>
                   </div>
                 </div>
@@ -260,7 +258,7 @@ function DemoSection() {
           <p className="text-lg text-muted-foreground">See everything. Predict anything. Control the sprawl.</p>
         </div>
         
-        <div className="max-w-6xl mx-auto rounded-xl border border-border/80 bg-background/50 backdrop-blur-2xl shadow-2xl shadow-primary/10 overflow-hidden">
+        <div className="max-w-6xl mx-auto rounded-xl border-2 border-white/20 bg-background/60 backdrop-blur-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.05),0_30px_80px_rgba(0,0,0,0.9)] overflow-hidden">
           {/* Browser Chrome */}
           <div className="h-12 border-b border-border/50 flex items-center px-4 gap-4 bg-muted/30">
             <div className="flex gap-2">
@@ -368,67 +366,6 @@ function CompetitiveSection() {
   );
 }
 
-function PricingSection() {
-  return (
-    <section className="py-24 bg-card border-y border-border/50" id="pricing">
-      <div className="container mx-auto px-6 max-w-5xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">Priced for Enterprise Value.</h2>
-          <p className="text-lg text-muted-foreground">Indicative pricing for launch. Final tiers confirmed at GA.</p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-8 rounded-2xl bg-background border border-border">
-            <h3 className="text-xl font-bold mb-2">Starter</h3>
-            <p className="text-sm text-muted-foreground mb-6">Up to 5 AI use cases</p>
-            <div className="mb-6">
-              <span className="text-4xl font-display font-bold">$50K</span>
-              <span className="text-muted-foreground">/yr</span>
-            </div>
-            <Button className="w-full mb-6 font-mono text-xs uppercase" variant="outline">Express Interest</Button>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Cost Intelligence</li>
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Basic Risk Reporting</li>
-            </ul>
-          </div>
-
-          <div className="p-8 rounded-2xl bg-background border-2 border-primary relative shadow-[0_0_40px_rgba(0,210,255,0.1)]">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs font-mono font-bold rounded-full uppercase tracking-wider">
-              Most Popular
-            </div>
-            <h3 className="text-xl font-bold mb-2">Growth</h3>
-            <p className="text-sm text-muted-foreground mb-6">Up to 15 AI use cases</p>
-            <div className="mb-6">
-              <span className="text-4xl font-display font-bold">$90K</span>
-              <span className="text-muted-foreground">/yr</span>
-            </div>
-            <Button className="w-full mb-6 font-mono text-xs uppercase">Request Briefing</Button>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Starter features</li>
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Value Intelligence</li>
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Active Governance API</li>
-            </ul>
-          </div>
-
-          <div className="p-8 rounded-2xl bg-background border border-border">
-            <h3 className="text-xl font-bold mb-2">Enterprise</h3>
-            <p className="text-sm text-muted-foreground mb-6">Unlimited use cases</p>
-            <div className="mb-6">
-              <span className="text-4xl font-display font-bold">$150K+</span>
-              <span className="text-muted-foreground">/yr</span>
-            </div>
-            <Button className="w-full mb-6 font-mono text-xs uppercase" variant="outline">Request Briefing</Button>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> Growth features</li>
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> EU AI Act Exports</li>
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> On-prem deployment</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 const TEAM_PREVIEW = [
   { name: "Guillaume Ehinger", initials: "GE", role: "Product & Technology", company: "Google", gradient: "from-blue-500 to-cyan-400", linkedin: "https://www.linkedin.com/in/gehinger/", photo: "/guillaume.jpeg" as string | null },
