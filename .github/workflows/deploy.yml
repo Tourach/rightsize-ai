@@ -35,6 +35,9 @@ jobs:
       - name: Build
         run: pnpm --filter @workspace/rightsize-ai exec vite build --config vite.config.github.ts
 
+      - name: Add 404 fallback for SPA routing
+        run: cp artifacts/rightsize-ai/dist/index.html artifacts/rightsize-ai/dist/404.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: artifacts/rightsize-ai/dist
