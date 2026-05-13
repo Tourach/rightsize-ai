@@ -86,13 +86,16 @@ function HeroSection() {
           transition={{ delay: 0.5, duration: 1 }}
           className="mt-20 pt-10 border-t border-border/50 flex flex-col items-center"
         >
-          <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-6">Governing models across</p>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+          <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-6">Governing every model your enterprise touches</p>
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-4 md:gap-x-14 opacity-50 hover:opacity-80 transition-all duration-500 max-w-3xl">
             <span className="text-sm font-bold tracking-wider font-mono">OpenAI</span>
             <span className="text-sm font-bold tracking-wider font-mono">Anthropic</span>
-            <span className="text-sm font-bold tracking-wider font-mono">Azure</span>
-            <span className="text-sm font-bold tracking-wider font-mono">GCP</span>
-            <span className="text-sm font-bold tracking-wider font-mono">AWS</span>
+            <span className="text-sm font-bold tracking-wider font-mono">Azure AI</span>
+            <span className="text-sm font-bold tracking-wider font-mono">GCP Vertex</span>
+            <span className="text-sm font-bold tracking-wider font-mono">AWS Bedrock</span>
+            <span className="text-sm font-bold tracking-wider font-mono text-primary/80">Custom Suppliers</span>
+            <span className="text-sm font-bold tracking-wider font-mono text-primary/80">Self-Hosted Models</span>
+            <span className="text-sm font-bold tracking-wider font-mono text-primary/80">Shadow AI Tools</span>
           </div>
         </motion.div>
       </div>
