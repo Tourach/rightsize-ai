@@ -205,7 +205,7 @@ function OpportunitySection() {
           
           <div className="lg:w-1/2 w-full">
             <div className="relative aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 rounded-full border border-border/40 flex items-center justify-center bg-card/20 backdrop-blur-sm">
+              <div className="absolute inset-0 rounded-full border-2 border-white/25 flex items-center justify-center bg-white/5 backdrop-blur-sm shadow-[inset_0_0_60px_rgba(255,255,255,0.04)]">
                 <div className="text-center absolute top-10">
                   <p className="text-3xl font-display font-bold">$15B</p>
                   <p className="text-xs font-mono text-muted-foreground uppercase">TAM</p>
