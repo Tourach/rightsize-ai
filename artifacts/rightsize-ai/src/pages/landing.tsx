@@ -40,9 +40,6 @@ function Navbar() {
           <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
           <Link href="/team" className="hover:text-foreground transition-colors">Team</Link>
         </div>
-        <div className="flex items-center gap-4">
-          <Button className="font-mono text-xs uppercase">Founder Briefing</Button>
-        </div>
       </div>
     </nav>
   );
@@ -70,14 +67,6 @@ function HeroSection() {
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
             Consolidate cost, risk, and ROI across your entire AI portfolio. Precision governance built for CFOs, CIOs, and CROs.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="h-14 px-8 text-base font-mono uppercase w-full sm:w-auto gap-2">
-              Request a Briefing <ArrowRight className="w-4 h-4" />
-            </Button>
-            <Button size="lg" variant="outline" className="h-14 px-8 text-base font-mono uppercase w-full sm:w-auto border-border/50 bg-background/50 backdrop-blur-sm">
-              View the Prospectus
-            </Button>
-          </div>
         </motion.div>
 
         <motion.div 
