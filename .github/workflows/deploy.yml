@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 10.26.1
 
       - uses: actions/setup-node@v4
         with:
@@ -30,13 +30,16 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build
         run: pnpm --filter @workspace/rightsize-ai exec vite build --config vite.config.github.ts
 
       - name: Add 404 fallback for SPA routing
         run: cp artifacts/rightsize-ai/dist/index.html artifacts/rightsize-ai/dist/404.html
+
+      - name: Verify CNAME in output
+        run: cat artifacts/rightsize-ai/dist/CNAME
 
       - uses: actions/upload-pages-artifact@v3
         with:
